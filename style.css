@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* background-image: linear-gradient(0deg, #4e159e,#858dfd); */
+    background-color: rgb(94, 74, 226);
+    font-family: "Poppins" , sans-serif;
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+}
+
+header{
+    color: rgb(255, 255, 255);
+    font-size: 2.3rem;
+    margin: 5rem 2rem 0rem 2rem;
+    transition: all 0.3s ease;
+}
+
+header:hover{
+    font-size: 2.6rem
+}
+
+header,form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*#region form*/
+
+form{
+    margin-top: 6rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form input{
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Roboto";
+    border: none;
+    border-radius: 90px;
+    background: white;
+    color: rgb(36, 36, 36);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form input:hover, form input:focus{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+form input::placeholder{
+    opacity: 0.4; 
+}
+
+form button{
+    padding-left: 1rem;
+    border: none;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    margin-left: 1rem;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+form button:hover{
+    font-size: 3.2rem;
+}
+
+form button:hover:active{
+    font-size: 3.4rem;
+    margin-top: 0.5rem;
+    color: rgb(46, 13, 112);
+    background: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+/*#endregion*/
+
+div.todo-container{
+    margin-top: 6rem;
+    min-width: 30%;
+}
+
+div.todo{
+    margin-top: 3rem;
+    margin-left: calc(50vw - 16rem);
+    font-size: 2rem;
+    outline: none;
+    transition: all 0.3s ease;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+li.todo-item{
+    list-style: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.100);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 90px;
+    transition: all 0.1s ease;
+}
+
+li.todo-item:hover{
+    list-style: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    border-radius: 90px;
+}
+
+button.delete-button,
+button.check-button{
+    border: none;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin-left: 1rem;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+button.delete-button:hover,
+button.check-button:hover{
+    font-size: 2.8rem;
+}
+
+button.delete-button:hover:active,
+button.check-button:hover:active{
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    color: rgb(46, 13, 112);
+    background: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+i{
+    pointer-events: none;
+}
