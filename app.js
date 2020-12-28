@@ -52,7 +52,6 @@ function addTodo(event){
 
 function deleteCheck(event){
     const item = event.target
-    console.log(item)
     if(item.classList[0] === "delete-button"){
         item.parentElement.remove();
     }
