@@ -4,5 +4,5 @@
 12/28/2020
 
 
-try it here: https://sglmnaz.github.io/MyTo-doList_HTML-CSS-JS/
+try it here: https://sglmnaz.github.io/Todo-List/
 
