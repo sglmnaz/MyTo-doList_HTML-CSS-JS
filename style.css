@@ -135,6 +135,15 @@ li.todo-item:hover{
     border-radius: 90px;
 }
 
+.completed{
+    opacity: 0.6;
+}
+
+.completed li{
+    color: rgba(255, 255, 255, 0.6) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
 button.delete-button,
 button.check-button{
     border: none;
