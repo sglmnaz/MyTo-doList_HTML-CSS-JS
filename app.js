@@ -53,7 +53,8 @@ function addTodo(event){
 function todoButtonsPress(event){
     const item = event.target
     if(item.classList[0] === "delete-button"){
-        item.parentElement.remove();
+        item.parentElement.classList.add("deleted")
+        setTimeout(() => item.parentElement.remove(), 500);
     }
     if(item.classList[0] === "check-button"){
         item.parentElement.classList.toggle("completed");
