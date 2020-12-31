@@ -8,6 +8,10 @@ html{
     font-size: 62.5%;
 }
 
+button{
+    user-select: none;
+}
+
 /*#region header*/
 
 header{
@@ -140,6 +144,7 @@ li.todo-item:hover{
 }
 
 .completed li{
+    text-decoration: line-through;
     color: rgba(255, 255, 255, 0.6) !important;
     background-color: rgba(255, 255, 255, 0) !important;
 }
